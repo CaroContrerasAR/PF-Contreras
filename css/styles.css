@@ -1,0 +1,139 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos de Sobre Mi, Capacitacion*/
+.fotos ul li, .videos ul li, .profe ul li, .slide ul li {
+  display: inline-block;
+  background-color: #9aa556;
+  margin: 5px;
+  padding: 5px;
+  border: 6rem; }
+
+/* estilos generales */
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif; }
+
+/* estilos del menu para BT */
+.color-menu {
+  background-color: #9eaa3a; }
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0px; }
+  .header img {
+    padding: 0.1rem; }
+  .header nav ul {
+    display: flex; }
+
+/* estilos del contenedor principal*/
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "uno uno" "dos-img dos-p" "tres-p tres-img" "cuatro-img cuatro-p" "footer footer"; }
+
+/* estilos del home */
+main {
+  width: 100vw;
+  text-align: center; }
+  main .uno {
+    grid-area: uno;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem; }
+    main .uno div {
+      background-color: #798242; }
+    main .uno h3 {
+      color: beige; }
+      main .uno h3 span {
+        display: block; }
+    main .uno p {
+      text-align: justify;
+      font-style: italic;
+      padding: 1rem; }
+      main .uno p span {
+        display: block; }
+  main section {
+    text-align: center; }
+    main section .dos {
+      font-size: 24px;
+      overflow: scroll; }
+      main section .dos img {
+        grid-area: dos-img; }
+      main section .dos p {
+        grid-area: dos-p;
+        padding: 1rem; }
+    main section .tres {
+      font-size: 16px;
+      overflow: auto; }
+      main section .tres img {
+        grid-area: tres-img; }
+      main section .tres p {
+        grid-area: tres-p;
+        padding: 1rem; }
+    main section .cuatro {
+      font-size: 26px;
+      overflow: scroll; }
+      main section .cuatro img {
+        grid-area: cuatro-img; }
+      main section .cuatro p {
+        grid-area: cuatro-p;
+        padding: 1rem; }
+
+footer {
+  grid-area: footer;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 1px; }
+  footer .redes ul li {
+    display: inline-block;
+    margin: 1rem; }
+  footer .redes .item-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+    footer .redes .item-fixed img {
+      animation-name: img-mov;
+      animation-iteration-count: infinite;
+      animation-duration: 3s; }
+
+@keyframes img-mov {
+  to {
+    transform: scale(0.9); }
+  from {
+    transform: scale(1); } }
+
+/* estilos de contactos */
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto ul li {
+    display: inline-block;
+    margin: 1rem; }
+
+/* media query */
+@media (max-width: 768px) {
+  .section {
+    background-color: beige;
+    align-items: center; } }
+
+@media (max-width: 576px) {
+  .section {
+    background-color: #d3dd9c;
+    align-items: center; }
+  .redes {
+    display: none; } }
