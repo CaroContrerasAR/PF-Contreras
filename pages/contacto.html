@@ -55,9 +55,9 @@
             </nav>
     </header>
     <main class="contacto">
-        <div>
-            <h2>Seguinos en las Redes</h2>
+        <div class="conteiner-fluid">
             <div class="redes">
+                <h2>Seguinos en las Redes</h2>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/battellostudio/" target="_blank">
@@ -71,44 +71,48 @@
                     </li>
                 </ul>
             </div>
-            <h2>Visitanos en </h2>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.931470260566!2d-57.5547641!3d-38.012521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de9fbf729dc3%3A0xf19fef228af2528b!2sSta.%20Fe%203245%2C%20B7602CEI%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1668707126361!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div>
-                <form class="form">
-                    <fieldset>
-                        <legend> Contacto </legend>
+            <div class="conteiner-fluid">
+                <div class="row">
+                    <div class="col m-2 p-5">
+                        <h2>Visitanos en </h2>
                         <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.931470260566!2d-57.5547641!3d-38.012521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de9fbf729dc3%3A0xf19fef228af2528b!2sSta.%20Fe%203245%2C%20B7602CEI%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1668707126361!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div >
+                
+                    <form class="col m-2 p-5 width-auto">
+                        <legend class="fs-2"> Contacto </legend>
+                        
+                        <div class="mb-2">
+                            <label for="FormControlInput1" class="form-label text-left">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="FormControlInput1" placeholder="Nombre y Apellido">
                         </div>
                         
-                        <div>
-                            <label for="e-mail">e-mail</label>
-                            <input type="email" name="e-mail" placeholder="mi_e-mail@yahoo.com.ar">
+                        <div class="mb-2">
+                            <label for="FormControlInput2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="FormControlInput2" placeholder="mi_e-mail@hotmail.com">
                         </div>
                         
-                        <div>
-                            <label for="asunto">Selecciona tipo de Consulta</label>
-                            <select name="asunto">
-                                <option value="entrenamientos">Entrenamientos</option>
-                                <option value="capacitaciones">Capacitaciones</option>
-                                <option value="otra">Otra Consulta</option>
-                            </select>
+                        <label for="DataList" class="form-label">Tipo de Consulta</label>
+                        <input class="form-control" list="datalistOptions" id="DataList" placeholder="click para elegir...">
+                        <datalist id="datalistOptions">
+                            <option value="Entrenamientos">
+                            <option value="Capacitaciones">
+                            <option value="Otra Consulta">
+                        </datalist>
+                        
+                        <div class="mb-2">
+                            <label for="FormControlTextarea1" class="form-label">Tu Consulta</label>
+                            <textarea class="form-control" id="FormControlTextarea1" rows="4"></textarea>
                         </div>
-    
-                        <div>
-                            <label for="Consulta">Consulta</label>
-                            <textarea name="consulta" rows="20" cols="50">Aqui escribe tu Consulta.</textarea>
-                        </div>
-    
-                        <div>
+
+                        <div class="mb-2">
                             <input type="submit"  value="ENVIAR">
                             <input type="reset" value="BORRAR">
                         </div>
-                    </fieldset>
-                </form>
+
+                    </form>
+                </div>
             </div>
         </div>
     </main>

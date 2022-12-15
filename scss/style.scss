@@ -19,50 +19,24 @@ body{
 .color-menu{
     background-color: $colorMenu;
 }
-// se cambia a BT
-.header{
-    display: flex;
-    position: sticky;
-    top: 0px;
-    img{
-        padding: 0.1rem;
-    }
-    nav ul{
-        display:flex;
-    }    
-}
 
-
-/* estilos del contenedor principal*/
-.contenedor{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "uno uno"
-    "dos-img dos-p"
-    "tres-p tres-img"
-    "cuatro-img cuatro-p"
-    "footer footer";
-    //justify-content: center;
-    //justify-items: center;      
+/* estilos de capacitacion para BT*/
+.color-caja{
+    background-color: $colorMQ;
 }
 
 /* estilos del home */
 main{
     width: 100vw;
-    //justify-content: center;
-    //align-items:flex-start;
     text-align: center;
     .uno{
-        grid-area: uno;
         display: block;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
         padding: 0.5rem;
+    
         div{
             background-color: $colorMenu3;
         }
@@ -81,46 +55,10 @@ main{
             } 
         }
     }
-    section{
-        text-align: center;
-        .dos{
-            font-size: 24px;
-            overflow: scroll;
-            img{
-                grid-area: dos-img;
-            }
-            p{
-                grid-area: dos-p;
-                padding: 1rem;
-            }
-        }
-        .tres{
-            font-size: 16px;
-            overflow: auto;
-            img{
-                grid-area: tres-img;
-            }
-            p{
-                grid-area: tres-p;
-                padding: 1rem;
-            }
-        }
-        .cuatro{
-            font-size: 26px;
-            overflow: scroll;
-            img{
-                grid-area: cuatro-img;
-            }
-            p{
-                grid-area: cuatro-p;
-                padding: 1rem;
-            }
-        }
-    }
+   
 }
 
 footer{
-    grid-area: footer;
     width: 100vw;
     @include flex;
     flex-direction:column;
@@ -161,6 +99,9 @@ footer{
 }
 .profe ul li{
     @extend %estilosListas;
+    justify-content:center;
+    width: 18rem;
+    height: 15rem;
 }
 .slide ul li{
     @extend %estilosListas;
@@ -175,14 +116,14 @@ footer{
 }
 /* media query */
 @media  (max-width:768px){
-    .section{
+    main{
         background-color: $colorMenu2;
         align-items: center;
     }
     
 }
 @media  (max-width:576px){
-    .section{
+    main{
         background-color: $colorMQ;
         align-items: center;
     }
