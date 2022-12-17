@@ -5,11 +5,11 @@
   box-sizing: border-box; }
 
 /* estilos de Sobre Mi, Capacitacion*/
-.fotos ul li, .videos ul li, .profe ul li, .slide ul li {
+.fotos ul li, .videos ul li, .slide ul li {
   display: inline-block;
   background-color: #9aa556;
   margin: 5px;
-  padding: 5px;
+  padding: 3px;
   border: 6rem; }
 
 /* estilos generales */
@@ -45,7 +45,7 @@ main {
     main .uno p {
       text-align: justify;
       font-style: italic;
-      padding: 1rem; }
+      padding: 0.5rem; }
       main .uno p span {
         display: block; }
 
@@ -55,7 +55,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0.5rem;
   margin: 1px; }
   footer .redes ul li {
     display: inline-block;
@@ -74,11 +74,6 @@ footer {
     transform: scale(0.9); }
   from {
     transform: scale(1); } }
-
-.profe ul li {
-  justify-content: center;
-  width: 18rem;
-  height: 15rem; }
 
 /* estilos de contactos */
 .contacto {

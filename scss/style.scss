@@ -49,7 +49,7 @@ main{
         p{  
             text-align:justify;
             font-style: italic;
-            padding: 1rem;
+            padding: 0.5rem;
             span{
                 display: block;
             } 
@@ -62,7 +62,7 @@ footer{
     width: 100vw;
     @include flex;
     flex-direction:column;
-    padding: 2rem;
+    padding: 0.5rem;
     margin: 1px;
     .redes{
         ul li{
@@ -93,16 +93,18 @@ footer{
 //estilos de Sobre Mi, Capacitacion en extend
 .fotos ul li{
     @extend %estilosListas;
+    
 }
 .videos ul li{
     @extend %estilosListas;
+   
 }
-.profe ul li{
-    @extend %estilosListas;
-    justify-content:center;
-    width: 18rem;
-    height: 15rem;
-}
+// .profe ul li{
+//     @extend %estilosListas;
+//     justify-content:center;
+//     width: 18rem;
+//     height: 15rem;
+// }
 .slide ul li{
     @extend %estilosListas;
 }
@@ -126,6 +128,7 @@ footer{
     main{
         background-color: $colorMQ;
         align-items: center;
+        
     }
     .redes{
         display: none;
